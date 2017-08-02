@@ -24,6 +24,7 @@ RUN set -x \
 RUN sudo adduser node sudo
 
 RUN mkdir -p /usr/src/app
+RUN chown node:node /usr/src/app
 WORKDIR /usr/src/app
 
 EXPOSE 9222
