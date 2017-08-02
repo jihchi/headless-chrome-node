@@ -1,3 +1,4 @@
 #!/bin/bash
 
-su node ./chromeuser-script.sh
+su node /chromeuser-script.sh
+exec "$@"
